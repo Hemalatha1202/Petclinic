@@ -52,7 +52,7 @@ jobs:
 
       - name: SonarQube Scan
         run: |
-          mvn clean verify sonar:sonar \
+          mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
             -Dsonar.projectKey=spring-framework-petclinic \
             -Dsonar.projectName="Spring Framework Petclinic" \
             -Dsonar.host.url="${{ secrets.SONAR_HOST_URL }}" \
