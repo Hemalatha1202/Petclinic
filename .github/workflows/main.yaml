@@ -6,10 +6,9 @@ on:
       - main
 
 jobs:
-
-  build:
-    name: Build with Maven
+  build-and-deploy:
     runs-on: ubuntu-latest
+    environment: dev
 
     steps:
 
